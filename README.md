@@ -1,6 +1,6 @@
 ## 🧠 AI Article Summarizer  
 Briefly makes reading easier by using AI to summarize lengthy content into clear, concise summaries.  
-🔗 **Live Demo:** [reliable-sundae-9184ff.netlify.app](https://reliable-sundae-9184ff.netlify.app)
+🔗 **Live Demo:** https://brieflyaisummerizer.netlify.app/
 
 ![Screenshot 2025-09-25 171715](https://github.com/user-attachments/assets/d8e1b41d-bed2-47e4-abec-e4bc43d4fabc)
 
