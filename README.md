@@ -3,7 +3,7 @@ Briefly makes reading easier by using AI to summarize lengthy content into clear
 🔗 **Live Demo:** https://brieflyaisummerizer.netlify.app/
 
 ## 📸 UI Demonstration
-![App UI](src/assets/UI.png)
+![App UI](src/assets/ui.png)
 
 ## 🤖 Introduction  
 Summarize any kind of article with just one click using the powerful OpenAI model.  
