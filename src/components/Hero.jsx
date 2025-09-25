@@ -23,8 +23,8 @@ const Hero = () => {
           Summarize Articles with <br className="max-md:hidden" />
           <span className="cyan_gradient">OpenAI GPT-4</span>
         </h1>
-        <h2 className="desc text-cyan-200 mt-4">
-          <span style={{ fontFamily: 'Montserrat, Arial, sans-serif', fontWeight: 700, letterSpacing: '1px' }}>Briefly</span> makes reading easier by using AI to summarize lengthy content into clear, concise summaries.
+        <h2 className="desc font-poppins text-cyan-200 mt-4">
+          Briefly makes reading easier by using AI to summarize lengthy content into clear, concise summaries.
         </h2>
       </div>
     </header>
