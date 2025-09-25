@@ -2,7 +2,8 @@
 Briefly makes reading easier by using AI to summarize lengthy content into clear, concise summaries.  
 🔗 **Live Demo:** https://brieflyaisummerizer.netlify.app/
 
-![Screenshot 2025-09-25 171715](C:\Users\aryan\Pictures\Screenshots)
+## 📸 UI Demonstration
+![App UI](src/assets/UI.jpg)
 
 ## 🤖 Introduction  
 Summarize any kind of article with just one click using the powerful OpenAI model.  
