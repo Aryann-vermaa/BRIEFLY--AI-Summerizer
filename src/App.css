@@ -1,0 +1,199 @@
+.glass-btn:hover {
+  background: rgba(30, 64, 175, 0.85);
+  color: #fff;
+  box-shadow: 0 12px 32px 0 rgba(30, 64, 175, 0.25), 0 2px 8px 0 rgba(0,0,0,0.10);
+  transform: translateY(-4px) scale(1.07) rotateX(4deg);
+  transition: box-shadow 0.3s, background 0.3s, color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.glass-btn:hover {
+  background: rgba(30, 64, 175, 0.85);
+  color: #fff;
+  box-shadow: 0 8px 24px 0 rgba(30, 64, 175, 0.18);
+  transform: scale(1.05);
+  transition: box-shadow 0.3s, background 0.3s, color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.glass-hero {
+  /* ...existing glass styles... */
+}
+
+.glass-hero:hover {
+  box-shadow: 0 12px 32px 0 rgba(30, 64, 175, 0.18), 0 2px 8px 0 rgba(0,0,0,0.10);
+  background: rgba(223, 245, 255, 0.95);
+  transform: scale(1.02);
+  transition: box-shadow 0.3s, background 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animation for glass sections */
+.fade-in {
+  animation: fadeInUp 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Glassmorphism and Cyan Theme */
+
+.glass-hero {
+  background: rgba(223, 245, 255, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(118, 214, 255, 0.85);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-radius: 24px;
+  border: 1px solid #111827;
+  transition: box-shadow 0.3s;
+}
+
+.glass-btn {
+  @apply rounded-full border border-blue-900 bg-cyan-900/30 py-2 px-6 text-sm text-black font-bold shadow-lg backdrop-blur-md transition-all hover:bg-cyan-800 hover:text-white;
+  box-shadow: 0 4px 24px 0 rgba(10, 24, 64, 0.18);
+}
+
+.cyan_gradient {
+  @apply bg-gradient-to-r from-cyan-400 via-blue-400 to-teal-300 bg-clip-text text-transparent;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+}
+
+.main:before {
+  background: radial-gradient(circle, rgba(0, 10, 36, 0.1) 0, #f0f4f8 100%);
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.main:after {
+  content: "";
+  background-image: url("/src/assets/grid.svg");
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.3;
+  filter: invert(0.9);
+}
+
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 640px;
+  background-image: radial-gradient(at 27% 37%, #4f46e5 0px, transparent 20%),
+    radial-gradient(at 97% 21%, #818cf8 0px, transparent 50%),
+    radial-gradient(at 52% 99%, #60a5fa 0px, transparent 50%),
+    radial-gradient(at 10% 29%, #0ea5e9 0px, transparent 50%),
+    radial-gradient(at 97% 96%, #a5b4fc 0px, transparent 50%),
+    radial-gradient(at 33% 50%, #c084fc 0px, transparent 50%),
+    radial-gradient(at 79% 53%, #6366f1 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(160%);
+  top: 80px;
+  opacity: 0.18;
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    padding: 0;
+  }
+}
+
+/* Tailwind Styles */
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+
+.black_btn {
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
+}
+
+/* 🔵 Updated gradient to a blue-violet blend */
+.orange_gradient {
+  @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-400 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-700 sm:text-xl text-center max-w-2xl;
+}
+
+.url_input {
+  @apply block w-full rounded-md border border-gray-900 py-4 pl-10 pr-16 text-lg font-satoshi font-medium focus:border-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-800;
+  min-height: 56px;
+  background: rgba(223, 245, 255, 0.25);
+  box-shadow: 0 4px 24px 0 rgba(118, 214, 255, 0.18);
+  backdrop-filter: blur(8px) saturate(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(160%);
+  border: 1.5px solid #111827;
+  color: #0a0a0a;
+  transition: box-shadow 0.3s;
+}
+
+.url_input::placeholder {
+  color: #222;
+  opacity: 1;
+}
+
+.submit_btn {
+  @apply absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 items-center justify-center rounded border font-sans text-sm font-medium;
+  border: 1.5px solid #111827;
+  color: #0a0a0a;
+  background: rgba(223, 245, 255, 0.25);
+  transition: box-shadow 0.3s, color 0.3s;
+}
+.submit_btn:hover {
+  color: #222;
+  border-color: #222;
+}
+
+.link_card {
+  @apply p-3 flex justify-start items-center flex-row bg-white border border-gray-200 gap-3 rounded-lg cursor-pointer;
+}
+
+.copy_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(180,180,255,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+}
+
+.blue_gradient {
+  @apply font-black bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent;
+}
+
+.summary_box {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(180,180,255,0.2)] backdrop-blur p-4;
+}
+.purple_gradient {
+  @apply bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-500 bg-clip-text text-transparent;
+}
